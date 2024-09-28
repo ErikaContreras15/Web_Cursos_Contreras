@@ -98,37 +98,40 @@ body, html {
 
 /* ----------------------- Main Section ----------------------- */
 .main {
-    background-color: #e6f3f8;
-    padding: 50px 0;
+    background-color: #eaeff2;
+    padding: 0.2px 0;
 }
 
 .main .container {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure it takes full width */
-    max-width: 1200px; /* Optional max-width */
+    width: 100%; 
+    max-width: 1200px; 
     padding: 20px;
 }
 
 .text-content {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
 }
 
 .text-content h1 {
+    font-family: 'Playfair Display', serif; /* Cambia la fuente */
+   /*font-family: 'Lora', serif;  Cambia la fuente */
     font-size: 2rem;
-    color: #333;
+    color: #1e0883;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .find-courses-btn {
-    padding: 10px 20px;
+    padding: 10px 50px;
     background-color: #0072ce;
     color: #fff;
     border: none;
@@ -138,20 +141,28 @@ body, html {
 }
 
 .find-courses-btn:hover {
-    background-color: #005bb5;
+    background-color: #ab50e4;
 }
 
 .image-content {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
     display: flex;
-    justify-content: flex-end; /* Align image to the right */
+    justify-content: flex-end; 
 }
 
 .image-content img {
-    width: 300px; /* Adjust as needed */
+    width: 100%; 
     height: auto;
-    max-width: 100%; /* Ensure image stays within container */
-    border-radius: 10px; /* Optional styling */
+    max-width: 500px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+/*efecto al pasar el mouse*/
+.image-content img:hover {
+    transform: scale(1.05); /* Aumentar tamaño */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8); /* Sombra más pronunciada */
+
 }
 
 
@@ -163,7 +174,7 @@ body, html {
 
 .search-input {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     padding: 10px 40px; /* Ajusta el padding a la izquierda para dar espacio a la lupa */
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -172,7 +183,7 @@ body, html {
 .search-icon {
     position: absolute;
     left: 10px; /* Ajusta la posición horizontal */
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%); /* Centra verticalmente el icono */
     width: 20px; /* Ajusta el tamaño de la lupa */
     height: auto; /* Mantiene la proporción */

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web_Cursos_Contreras</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+
  </head>
  <body>
     <!--------------------------------Encabezado----------------------------->
@@ -39,13 +42,13 @@
                      cuando quieras</h1>
                  <button class="find-courses-btn" onclick="scrollToCourses()">Encontrar cursos</button>
                 </div>
-                <div>
+                <div class="image-content">
                  <img src="img/ICONO.PNG" alt="iconoprin">
                 </div> 
             </div>
         </div>
       </section>
-
+    <!-----SEARCH-SECTION---->
      <section class="search-section">
         <div class="container">
             <p>¿Qué quieres aprender? </p>
@@ -54,7 +57,7 @@
               <img src="img/lupa.png" alt="Buscar" class="search-icon">
             </div>
         </div>
-     </section>
+      </section>
     </header>
 
    
@@ -66,13 +69,10 @@
         para todos los niveles. Los cursos incluyen materiales interactivos y prácticos para que puedas aprender a tu propio ritmo. ¡Comienza tu viaje de 
         aprendizaje hoy y expande tus conocimientos en el mundo digital!</p>
     </section>
-    <!-------------link src=" "" --------->
-
-    
+   
     <!------------- Seccion de Cursos----------------------------------->
          <section id="Cursos">
          <h2>Cursos</h2>
-        
         <!------Curso 1------------->
         <div class="course" id="course1">
             <div class="course-title">Introducción a la Programación</div>
@@ -133,43 +133,40 @@
                 </div>
         </div>
 
-</section>
+    </section>
 
-    <!-- Sección de Agregar Cursos----------------------------------->
-  <!-- Formulario de Registro de Cursos -->
-  <section id="AgregarCurso">
-    <h2>Registrar Cursos</h2>
-    <form id="formCurso">
-        <label for="nombre">Nombre del curso:</label>
-        <input type="text" id="nombre" required><br><br>
+   <!-- Formulario de Registro de Cursos -->
+    <section id="AgregarCurso">
+      <h2>Registrar Cursos</h2>
+      <form id="formCurso">
+         <label for="nombre">Nombre del curso:</label>
+         <input type="text" id="nombre" required><br><br>
 
-        <label for="docente">Docente:</label>
-        <input type="text" id="docente" required><br><br>
+         <label for="docente">Docente:</label>
+         <input type="text" id="docente" required><br><br>
 
-        <label for="fechaInicio">Fecha Inicio:</label>
-        <input type="date" id="fechaInicio" required><br><br>
+         <label for="fechaInicio">Fecha Inicio:</label>
+         <input type="date" id="fechaInicio" required><br><br>
 
-        <label for="duracion">Duración (en semanas):</label>
-        <input type="number" id="duracion" min="1" required><br><br>
+         <label for="duracion">Duración (en semanas):</label>
+         <input type="number" id="duracion" min="1" required><br><br>
 
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" required></textarea><br><br>
+         <label for="descripcion">Descripción:</label>
+         <textarea id="descripcion" required></textarea><br><br>
 
-        <button type="submit">Agregar Curso</button>
-    </form>
-</section>
+         <button type="submit">Agregar Curso</button>
+        </form>
+    </section>
+    <!-- Sección donde se mostrarán los cursos agregados -->
+    <section id="listaCursos">
+      <h2>Lista de Cursos Agregados</h2>
+      <div id="cursos"></div>
+    </section>
 
-<!-- Sección donde se mostrarán los cursos agregados -->
-<section id="listaCursos">
-    <h2>Lista de Cursos Agregados</h2>
-    <div id="cursos"></div>
-</section>
-
-
-<!------------- Seccion de Contactos----------------------------------->
-<section id="Contacto">
-<h2> Contactos</h2>
-</section>
+   <!--------------------Seccion de Contactos----------------------------------->
+   <section id="Contacto">
+   <h2> Contactos</h2>
+   </section>
 
 
 
@@ -178,8 +175,8 @@
 
 
 
-<script src="funciones.js"></script>
-<!----------------------------------------Pie de página------------------------------>
+ <script src="funciones.js"></script>
+   <!------------------------------Pie de página------------------------------>
     <footer>
         <p>&copy; WEB_CURSOS. Todos los derechos reservados.</p>
     </footer>
