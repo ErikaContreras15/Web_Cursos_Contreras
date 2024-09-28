@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web_Cursos_Contreras</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+ </head>
+ <body>
     <!--------------------------------Encabezado----------------------------->
-     <header>
-        <h1>Web Cursos</h1>
-        <nav>
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Cursos">Cursos</a></li>
-                <li><a href="#AgregarCurso">Agregar Curso</a></li>
-               <li><a href= "#Contacto"> Contacto</a></li> 
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">   
+            <div class ="header-content">
+
+             <nav class="nav">
+                <ul>
+                 <li><a href="#Inicio">Inicio</a></li>
+                 <li><a href="#Cursos">Cursos</a></li>
+                 <li><a href="#AgregarCurso">Agregar Curso</a></li>
+                 <li><a href= "#Contacto"> Contacto</a></li> 
+                </ul>
+              </nav>
+
+               <div class="user-actions">
+                 <input type="text" class="search-bar" placeholder="Buscar...">
+                 <button class="login-btn">Inicia sesión</button>
+                 <button class="register-btn">Regístrate</button>
+                </div>
+            </div>
+        </div>
+
+     <!-- Main Section -->
+     <section class="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="text-content">
+                 <h1>Acelera tu futuro<br>
+                     Aprende donde y <br>
+                     cuando quieras</h1>
+                 <button class="find-courses-btn" onclick="scrollToCourses()">Encontrar cursos</button>
+                </div>
+                <div>
+                 <img src="img/ICONO.PNG" alt="iconoprin">
+                </div> 
+            </div>
+        </div>
+      </section>
+
+     <section class="search-section">
+        <div class="container">
+            <p>¿Qué quieres aprender? </p>
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="">
+              <img src="img/lupa.png" alt="Buscar" class="search-icon">
+            </div>
+        </div>
+     </section>
     </header>
+
+   
     <!----------------------INICIO--------------------------------------------->
     <section id="Inicio">
         <h1>Bienvenido a Web Cursos Online</h1>

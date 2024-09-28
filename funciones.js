@@ -1,4 +1,11 @@
 
+//ENCONTRAR CURSOS USANDO SCROLL
+
+function scrollToCourses() {
+    document.getElementById("Cursos").scrollIntoView({ behavior: 'smooth' });
+}
+
+
 //SECCION 1 CURSOS DISPONIBLES
 // Función para mostrar u ocultar los detalles de cada curso
 function toggleDetails(courseId) {
