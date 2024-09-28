@@ -79,44 +79,64 @@
 </section>
 
     <!-- Sección de Agregar Cursos----------------------------------->
-     <section id="#AgregarCurso">
-        <h3>Agregar Cursos</h2>
-        <form action="#" method="post">
-            <label for="nombrecurso">Nombre del curso:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-            <br>
-            <label for="docente">Docente:</label>
-            <input type="docente" id="docente" name="docente" required><br>
-            <br>
-            <label for="fechaInicio">Fecha Inicio:</label>
-            <input type="fechaInicio" name="fechaInicio" required><br>
-            <br>
-            <label for="duracion">Duracion:</label>
-            <input type="duracion" name="duracion" required><br>
-            
-        </form>
-    </section>
+  <!-- Formulario de Registro de Cursos -->
+  <section id="AgregarCurso">
+    <h2>Registrar Cursos</h2>
+    <form id="formCurso">
+        <label for="nombre">Nombre del curso:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="docente">Docente:</label>
+        <input type="text" id="docente" required><br><br>
+
+        <label for="fechaInicio">Fecha Inicio:</label>
+        <input type="date" id="fechaInicio" required><br><br>
+
+        <label for="duracion">Duración (en semanas):</label>
+        <input type="number" id="duracion" min="1" required><br><br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea><br><br>
+
+        <button type="submit">Agregar Curso</button>
+    </form>
+</section>
+
+<!-- Sección donde se mostrarán los cursos agregados -->
+<section id="listaCursos">
+    <h2>Lista de Cursos Agregados</h2>
+    <div id="cursos"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!------------- Seccion de Contactos----------------------------------->
 <section id="#Contacto">
-<h4> Contactos</h4>
-
-
-
-
-
-
-
-
-
-
-
-
+<h2> Contactos</h2>
 </section>
-</body>
 
+
+<script src="funciones.js"></script>
 <!----------------------------------------Pie de página------------------------------>
     <footer>
         <p>&copy; WEB_CURSOS. Todos los derechos reservados.</p>
     </footer>
 
+</body>
 </html>
