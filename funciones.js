@@ -1,4 +1,16 @@
 
+//SECCION 1 CURSOS DISPONIBLES
+// Función para mostrar u ocultar los detalles de cada curso
+function toggleDetails(courseId) {
+    var details = document.getElementById(courseId);
+    if (details.style.display === "none") {
+        details.style.display = "block";
+    } else {
+        details.style.display = "none";
+    }
+}
+
+
 //SECCION 2  AGREGAR CURSOS
 // Cargar cursos guardados desde localStorage
 document.addEventListener('DOMContentLoaded', cargarCursos);
