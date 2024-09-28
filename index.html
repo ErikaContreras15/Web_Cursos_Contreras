@@ -20,61 +20,69 @@
         </nav>
     </header>
 
-   <!------------- Seccion de Cursos----------------------------------->
-    <section id="#Cursos">
-    <h2>Cursos</h2>
-    <form action="#" method="post"> 
-        <section action id="course">
+     <!------------- Seccion de Cursos----------------------------------->
+         <section id="Cursos">
+         <h2>Cursos</h2>
+        
+        <!------Curso 1------------->
+        <div class="course" id="course1">
             <div class="course-title">Introducción a la Programación</div>
-            <div class="course-info"><strong>Docente:</strong> Mgs.Juan Pérez</div>
-            <div class="course-info"><strong>Fecha de inicio:</strong> 1 de Octubre, 2024</div>
-            <div class="course-info"><strong>Duración:</strong> 8 semanas</div>
+            <div class="course-info">Docente: Mgs. Juan Pérez</div>
+            <div class="course-info">Fecha de inicio: 1 de Octubre, 2024</div>
+            <div class="course-info">Duración: 8 semanas</div>
+            <button class="details-btn" onclick="toggleDetails('details1')">Ver Más Detalles</button>
+            <div class="course-details" id="details1" style="display:none;">
+                <p>Descripción: Curso introductorio para aprender los fundamentos de la programación.</p>
+            </div>
         </div>
-        <br>
-        <button type="submit">Ver Más Detalles</button><br> 
-        </br>
-        <section action id="course2">
-            <div class="course2-title">Data Science para Principiantes</div>
-            <div class="course2-info"><strong>Docente:</strong> Ing.Carlos Martínez</div>
-            <div class="course2-info"><strong>Fecha de inicio:</strong> 5 de Noviembre, 2024</div>
-            <div class="course2-info"><strong>Duración:</strong> 12 semanas</div>
-        </div>
-        <br>
-        <button type="submit">Ver Más Detalles</button><br> 
-        </br>
 
-       <section action id="course3">
-            <div class="course3-title">Uso de herramientas digitales</div>
-            <div class="course3-info"><strong>Docente:</strong> Ing.Fernando Sanchez</div>
-            <div class="course3-info"><strong>Fecha de inicio:</strong> 15 de Noviembre, 2024</div>
-            <div class="course3-info"><strong>Duración:</strong> 10 semanas</div>
+        <!--------Curso 2-------->
+        <div class="course" id="course2">
+            <div class="course-title">Data Science para Principiantes</div>
+            <div class="course-info">Docente: Ing. Carlos Martínez</div>
+            <div class="course-info">Fecha de inicio: 5 de Noviembre, 2024</div>
+            <div class="course-info">Duración: 12 semanas</div>
+            <button class="details-btn" onclick="toggleDetails('details2')">Ver Más Detalles</button>
+            <div class="course-details" id="details2" style="display:none;">
+                <p>Descripción: Aprende los conceptos básicos de Data Science y su aplicación en proyectos reales.</p>
+            </div>
         </div>
-        <br>
-        <button type="submit">Ver Más Detalles</button><br> 
-        </br>
-
-        <section action id="course4">
-            <div class="course4-title">Identidad corporativa en entornos presenciales, remotos y mixtos</div>
-            <div class="course4-info"><strong>Docente:</strong> Ing.Fernando Sanchez</div>
-            <div class="course4-info"><strong>Fecha de inicio:</strong> 15 de Noviembre, 2024</div>
-            <div class="course4-info"><strong>Duración:</strong> 10 semanas</div>
+     
+        <!------Curso 3---------->
+          <div class="course" id="course3">
+            <div class="course-title">Uso de herramientas digitales</div>
+            <div class="course-info">Docente: Ing.Fernando Sanchez </div>
+            <div class="course-info">Fecha de inicio: 15 de Noviembre, 2024</div>
+            <div class="course-info">Duración: 10 semanas</div>
+            <button class="details-btn" onclick="toggleDetails('details3')">Ver Más Detalles</button>
+            <div class="course-details" id="details3" style="display:none;">
+                <p>Descripción: “De vez en cuando, una nueva tecnología, un antiguo problema y una gran idea se convierten en una innovación”</p>
+            </div>
         </div>
-        <br>
-        <button type="submit">Ver Más Detalles</button><br> 
-        </br>
 
-        <section action id="course5">
-            <div class="course5-title">Ciberseguridad</div>
-            <div class="course5-info"><strong>Docente:</strong> Mgs.Andrea Romero</div>
-            <div class="course5-info"><strong>Fecha de inicio:</strong> 3 de Noviembre, 2024</div>
-            <div class="course5-info"><strong>Duración:</strong> 20 semanas</div>
+        <!---------Curso 4-------->
+          <div class="course" id="course4">
+            <div class="course-title">Identidad corporativa en entornos presenciales, remotos y mixtos</div>
+            <div class="course-info">Docente: Ing.Amanda Arizaga </div>
+            <div class="course-info">Fecha de inicio: 10 de Octubre, 2024</div>
+            <div class="course-info">Duración: 13 semanas</div>
+            <button class="details-btn" onclick="toggleDetails('details4')">Ver Más Detalles</button>
+            <div class="course-details" id="details4" style="display:none;">
+                <p>Descripción: La identidad corporativa de una empresa va más allá de la apariencia del negocio y está relacionada con asuntos culturales y organizacionales importantes de la compañía.</p>
+            </div>
         </div>
-        <br>
-        <button type="submit">Ver Más Detalles</button><br> 
-        </br>
-      
-    </form>
-
+       
+        <!--------- Curso 5 -------->
+        <div class="course" id="course5">
+                <div class="course-title">Ciberseguridad</div>
+                <div class="course-info">Docente: Mgtr.Sofia Benavides</div>
+                <div class="course-info">Fecha de inicio: 22 de Octubre, 2024</div>
+                <div class="course-info">Duración: 25 semanas</div>
+                <button class="details-btn" onclick="toggleDetails('details5')">Ver Más Detalles</button>
+                <div class="course-details" id="details5" style="display:none;">
+                    <p>Importancia de entender los riesgos electrónicos a los que se exponen las grandes empresas y menciona cuál es la política de seguridad que protege los datos, sistemas informáticos e información de la empresa.</p>
+                </div>
+        </div>
 
 </section>
 
