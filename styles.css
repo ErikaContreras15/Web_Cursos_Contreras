@@ -405,3 +405,30 @@ body, html {
     color: #28a745;
     text-align: center;
 }
+
+/*--------------------------------------FOOTER----------------------------------------------------*/
+.footer {
+    background-color: #31a4a8;
+    color: #ffffff; /* Color del texto */
+    padding: 20px 40px; /* Padding general */
+    display: flex; /* Utilizar flex para la distribución */
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: center; /* Alinear al centro verticalmente */
+    flex-wrap: wrap; 
+    text-align: left; 
+}
+
+/* Estilo para los íconos sociales */
+.social-icons {
+    margin-top: 10px; 
+}
+.social-icons a {
+    display: inline-block; /* Mostrar los enlaces en línea */
+    margin-right: 15px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px;
+}
