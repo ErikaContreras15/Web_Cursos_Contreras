@@ -356,3 +356,52 @@ body, html {
     border-radius: 4px;
 }
 
+/* ------------------------------------CONTACTO ------------------------------------ */
+#Contacto {
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+#Contacto h2 {
+    font-size: 28px;
+    color: #007BFF;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#Contacto p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo del formulario de contacto */
+#formContacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 15px;
+}
+/* Estilo del botón de enviar */
+#formContacto button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#formContacto button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de confirmación */
+#mensajeConfirmacion p {
+    font-size: 18px;
+    color: #28a745;
+    text-align: center;
+}

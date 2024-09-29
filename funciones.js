@@ -78,3 +78,14 @@ function eliminarCurso(index) {
     localStorage.setItem('cursos', JSON.stringify(cursos));
     cargarCursos();
 }
+
+////////////////////////////  3  SECCION CONTACTOS//////////////////////////
+ document.getElementById('formContacto').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar la recarga de la página
+
+// Mostrar mensaje de confirmación
+document.getElementById('mensajeConfirmacion').style.display = 'block';
+
+// Ocultar el formulario después de enviar el mensaje
+document.getElementById('formContacto').style.display = 'none';
+});
