@@ -191,27 +191,27 @@ body, html {
 }
 /* -----------------------------------------INICIO----------------------------------------------------------------------------------------------------------*/
 #Inicio {
-    background-color: #eae1e1; /* Color de fondo blanco */
-    padding: 10px 40px; /* Espaciado interno */
+    background-color: #eae1e1; 
+    padding: 10px 40px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    text-align: left; /* Alinear el texto a la izquierda */
-    margin: 20px auto; /* Margen superior e inferior, centrado */
-    max-width: 800px; /* Ancho máximo de la sección */
+    text-align: left; 
+    margin: 20px auto; 
+    max-width: 800px; 
 }
 /* Estilo del encabezado */
 #Inicio h1 {
-    font-size: 2.5rem; /* Tamaño de fuente grande */
-    color: #170754; /* Color del texto */
-    margin-bottom: 15px; /* Espaciado inferior */
-    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 2.5rem; 
+    color: #170754; 
+    margin-bottom: 15px; 
+    font-family: 'Georgia', serif; 
     text-shadow: 1px 1px 3px rgba(27, 4, 4, 0.2); /* Sombra de texto para mayor impacto */
 }
 /* Estilo de los párrafos */
 #Inicio p {
     font-size: 1.1rem; /* Tamaño de fuente estándar */
-    color: #333; /* Color del texto */
-    line-height: 1.8; /* Altura de línea para mejor legibilidad */
-    margin: 10px 0; /* Margen superior e inferior para los párrafos */
+    color: #333; 
+    line-height: 1.8; 
+    margin: 10px 0; 
 }
 
 /*----------------------------------------    CURSOS  ------------------------------------------------------------------------------------*/
@@ -271,7 +271,7 @@ body, html {
     margin: 20px auto;
     max-width: 600px; /* Ajustar el tamaño del contenedor */
     background-color: #f9f9f9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(137, 47, 47, 0.1);
 }
 
 #AgregarCurso h2 {
@@ -409,11 +409,11 @@ body, html {
 /*--------------------------------------FOOTER----------------------------------------------------*/
 .footer {
     background-color: #31a4a8;
-    color: #ffffff; /* Color del texto */
-    padding: 20px 40px; /* Padding general */
-    display: flex; /* Utilizar flex para la distribución */
-    justify-content: space-between; /* Espacio entre las columnas */
-    align-items: center; /* Alinear al centro verticalmente */
+    color: #ffffff; 
+    padding: 20px 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     flex-wrap: wrap; 
     text-align: left; 
 }
@@ -423,7 +423,7 @@ body, html {
     margin-top: 10px; 
 }
 .social-icons a {
-    display: inline-block; /* Mostrar los enlaces en línea */
+    display: inline-block; 
     margin-right: 15px; 
     transition: transform 0.3s ease-in-out; 
 }
